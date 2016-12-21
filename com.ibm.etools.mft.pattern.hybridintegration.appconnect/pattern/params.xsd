@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="unqualified" targetNamespace="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern" xmlns="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:complexType name="Id15554964dc1e3029645a86d0328">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="1" name="row">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element maxOccurs="1" minOccurs="1" name="fieldName" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Id155356d7d80e8e34c40c7bc7dd3">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="5061747465726E732173616D706C655F6E6F">
+                <xsd:annotation>
+                    <xsd:documentation>No</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E732173616D706C655F796573">
+                <xsd:annotation>
+                    <xsd:documentation>Yes</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Id1591895caf683f666126dbc7c3f">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="5061747465726E732131">
+                <xsd:annotation>
+                    <xsd:documentation>1</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E732132">
+                <xsd:annotation>
+                    <xsd:documentation>2</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E732133">
+                <xsd:annotation>
+                    <xsd:documentation>3</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E732134">
+                <xsd:annotation>
+                    <xsd:documentation>4</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E732135">
+                <xsd:annotation>
+                    <xsd:documentation>5</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Id1591e10d1d8e41494a9366f9db3">
+        <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="5061747465726E732168747470">
+                <xsd:annotation>
+                    <xsd:documentation>http</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="5061747465726E73216874747073">
+                <xsd:annotation>
+                    <xsd:documentation>https</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="root" type="Root"/>
+    <xsd:complexType name="Root">
+        <xsd:sequence>
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="instanceName" type="xsd:string"/>
+            <!-- General -->
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="ppInterfaceTitle" type="xsd:string"/>
+            <xsd:element default="default" maxOccurs="1" minOccurs="0" name="ppInterfaceDescription" type="xsd:string"/>
+            <xsd:element default="5061747465726E732168747470" maxOccurs="1" minOccurs="1" name="ppHTTPorHTTPS" type="Id1591e10d1d8e41494a9366f9db3"/>
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="ppHostname" type="xsd:string"/>
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="ppWebhookURLFragment" type="xsd:string"/>
+            <xsd:element default="5061747465726E732131" maxOccurs="1" minOccurs="1" name="ppNumberOfEvents" type="Id1591895caf683f666126dbc7c3f"/>
+            <xsd:element default="5061747465726E732173616D706C655F796573" maxOccurs="1" minOccurs="1" name="ppIncludeSample" type="Id155356d7d80e8e34c40c7bc7dd3"/>
+            <!-- Trigger1 -->
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="ppTrigger1Name" type="xsd:string"/>
+            <xsd:element default="default" maxOccurs="1" minOccurs="1" name="ppTrigger1Description" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ppTrigger1Fields" type="Id15554964dc1e3029645a86d0328"/>
+            <!-- Trigger2 -->
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger2Name" type="xsd:string"/>
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger2Description" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ppTrigger2Fields" type="Id15554964dc1e3029645a86d0328"/>
+            <!-- Trigger3 -->
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger3Name" type="xsd:string"/>
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger3Description" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ppTrigger3Fields" type="Id15554964dc1e3029645a86d0328"/>
+            <!-- Trigger4 -->
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger4Name" type="xsd:string"/>
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger4Description" type="xsd:string"/>
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger4Fields" type="xsd:string"/>
+            <!-- Trigger5 -->
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger5Name" type="xsd:string"/>
+            <xsd:element default="" maxOccurs="1" minOccurs="1" name="ppTrigger5Description" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="1" name="ppTrigger5Fields" type="Id15554964dc1e3029645a86d0328"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

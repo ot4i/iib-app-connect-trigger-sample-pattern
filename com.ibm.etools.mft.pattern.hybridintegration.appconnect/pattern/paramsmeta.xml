@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<povs xmlns:patterns="http://www.ibm.com/patterns">
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.instanceName" name="instanceName"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppInterfaceTitle"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppInterfaceDescription"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppHTTPorHTTPS"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppHostname"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppWebhookURLFragment"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppNumberOfEvents"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="ppIncludeSample"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159142bf400263257c55f7f1693" name="ppTrigger1Name"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159142bf400263257c55f7f1693" name="ppTrigger1Description"/>
+    <patterns:complexTablePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159142bf400263257c55f7f1693" name="ppTrigger1Fields">
+        <columnDescriptor name="fieldName"/>
+    </patterns:complexTablePov>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143686d371d3275c8202a4bc" name="ppTrigger2Name"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143686d371d3275c8202a4bc" name="ppTrigger2Description"/>
+    <patterns:complexTablePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143686d371d3275c8202a4bc" name="ppTrigger2Fields">
+        <columnDescriptor name="fieldName"/>
+    </patterns:complexTablePov>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id15914399b172ad88e04ded88bc" name="ppTrigger3Name"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id15914399b172ad88e04ded88bc" name="ppTrigger3Description"/>
+    <patterns:complexTablePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id15914399b172ad88e04ded88bc" name="ppTrigger3Fields">
+        <columnDescriptor name="fieldName"/>
+    </patterns:complexTablePov>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143d2ba7b39e20516c5b93d7" name="ppTrigger4Name"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143d2ba7b39e20516c5b93d7" name="ppTrigger4Description"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143d2ba7b39e20516c5b93d7" name="ppTrigger4Fields"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143fb12bcbdabb2b9dffbdea" name="ppTrigger5Name"/>
+    <simplePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143fb12bcbdabb2b9dffbdea" name="ppTrigger5Description"/>
+    <patterns:complexTablePov groupId="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143fb12bcbdabb2b9dffbdea" name="ppTrigger5Fields">
+        <columnDescriptor name="fieldName"/>
+    </patterns:complexTablePov>
+    <Group id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.instanceName" visible="false"/>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id155356c35f967434fc3b47a4a77" name="Id155356c35f967434fc3b47a4a77" visible="true"/>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159142bf400263257c55f7f1693" name="Id159142bf400263257c55f7f1693" visible="true">
+        <action default="false" type="visibility">
+            <value conditionExpression="number(pp:getValue('ppNumberOfEvents')) >= 1" valueExpression="true()"/>
+        </action>
+    </Group>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143686d371d3275c8202a4bc" name="Id159143686d371d3275c8202a4bc" visible="true">
+        <action default="false" type="visibility">
+            <value conditionExpression="number(pp:getValue('ppNumberOfEvents')) >= 2" valueExpression="true()"/>
+        </action>
+    </Group>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id15914399b172ad88e04ded88bc" name="Id15914399b172ad88e04ded88bc" visible="true">
+        <action default="false" type="visibility">
+            <value conditionExpression="number(pp:getValue('ppNumberOfEvents')) >= 3" valueExpression="true()"/>
+        </action>
+    </Group>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143d2ba7b39e20516c5b93d7" name="Id159143d2ba7b39e20516c5b93d7" visible="true">
+        <action default="false" type="visibility">
+            <value conditionExpression="number(pp:getValue('ppNumberOfEvents')) >= 4" valueExpression="true()"/>
+        </action>
+    </Group>
+    <Group description="description" expand="false" id="com.ibm.etools.mft.pattern.hybridintegration.appconnect.pattern.Id159143fb12bcbdabb2b9dffbdea" name="Id159143fb12bcbdabb2b9dffbdea" visible="true">
+        <action default="false" type="visibility">
+            <value conditionExpression="number(pp:getValue('ppNumberOfEvents')) = 5" valueExpression="true()"/>
+        </action>
+    </Group>
+    <ReferencedProject name="_InterfaceAppConnect"/>
+    <ReferencedProject name="_SampleAppConnect"/>
+</povs>

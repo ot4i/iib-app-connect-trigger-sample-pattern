@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette:CategoryCmp xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:palette="http://www.ibm.com/wbi/2005/eflow_palette" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" xmi:id="AppConnect">
+  <categoryLabel xsi:type="utility:TranslatableString" key="category.name" bundleName="palette" pluginId="AppConnect"/>
+  <cmpGroups xsi:type="palette:GroupCmp">
+    <cmpEntries xsi:type="palette:ToolEntry" xmi:id="com.ibm.dev.AppConnect" icon16Name="platform:/plugin/AppConnect/icons/full/clcl16/com/ibm/dev/AppConnect.gif" icon32Name="platform:/plugin/AppConnect/icons/full/obj32/com/ibm/dev/AppConnect.gif" toolClassName="com.ibm.etools.mft.flow.editor.MFTNodeCreationTool" toolClassPluginId="com.ibm.etools.mft.flow" nodeURI="com/ibm/dev/AppConnect.msgflow">
+      <entryLabel xsi:type="utility:TranslatableString" key="entry.com.ibm.dev.AppConnect" bundleName="palette" pluginId="AppConnect"/>
+      <entryShortDescription xsi:type="utility:TranslatableString" key="tooltip.com.ibm.dev.AppConnect" bundleName="palette" pluginId="AppConnect"/>
+    </cmpEntries>
+  </cmpGroups>
+</palette:CategoryCmp>

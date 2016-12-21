@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./css/pattern.css"/>
+        <title>Pattern Specification</title>
+    </head>
+    <body>
+        <h1 class="topictitle1">Pattern Specification</h1>
+        <div>
+            <p class="shortdesc"></p>
+        </div>
+        <p>        
+        Use this pattern to quickly connect an Integration Bus message flow to App Connect.
+        The pattern creates a YAML document which describes the web hooks interface between the products.
+        Webhooks is a simple HTTP notification pattern, allowing a user to define an HTTP callback (in simple language, think subscription)
+        for a given hook.
+        </p> 
+                
+        <div class="section">
+            <h2 class="sectiontitle">Solution</h2>
+        </div>
+        
+        <p>The diagram below shows the main components:  
+                
+		<div class="image">
+			<img src="IIBtoAppConnectPattern.png" alt="A diagram showing the behavior of the pattern." />
+		</div>                
+                                
+		<p>The dark blue boxes labelled "SG" show that a Secure Gateway can optionally be used to establish 
+		network connectivity between App Connect and an on-premise system installed within your DMZ.</p>
+		
+<p>The pattern helps you define a custom Application to IBM App Connect, using a YAML document which specifies 
+one or more triggers. The pattern lets you define between 1 and 5 App Connect triggers.  Each trigger 
+has a name, description and wire format interface format associated with it.</p>
+
+<p>The pattern creates a sample message flow which includes an App Connect message flow node. The IIB flow is configured to expect
+to receive an XML message over HTTP, and map it to a JSON message format defined by the first trigger in the YAML document.
+A map is generated which has an XML schema defined for its source, and a JSON schema defined for its target. Once the pattern instance
+is generated the user is expected to map the fields.</p>
+				 
+		<div class="familylinks">
+			<a name="anchorBack"></a>
+			<div class="section">
+				<h2 class="sectiontitle">Related tasks</h2>
+			</div>			
+		</div>
+		<div>
+			<a href="overview.htm">Constraints on the use of the pattern</a>
+		</div>
+		<div>
+			<a href="overview.htm">Tasks to complete before applying the pattern</a>
+		</div>
+		<div>
+			<a href="overview.htm">Apply and configure the pattern</a>
+		</div>
+		<div>
+			<a href="parameters.htm">Parameters for the pattern</a>
+		</div>
+		<div>
+			<a href="overview.htm">Tasks to complete after generating the pattern</a>
+		</div>
+    </body>
+</html>

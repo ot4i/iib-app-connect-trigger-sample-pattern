@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com_ibm_dev_AppConnectInner.msgflow="com/ibm/dev/AppConnectInner.msgflow" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="com/ibm/dev/AppConnect.msgflow" nsPrefix="com_ibm_dev_AppConnect.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" useDefaults="true" udpSupport="true">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.EventType" name="EventType">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierBase" name="URLSpecifierBase" lowerBound="1" defaultValueLiteral="/hook">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierStar" name="URLSpecifierStar" lowerBound="1" defaultValueLiteral="/hook">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <translation xmi:type="utility:TranslatableString" key="AppConnect" bundleName="com/ibm/dev/AppConnect" pluginId="AppConnect"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/AppConnect/icons/full/obj16/com/ibm/dev/AppConnect.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/AppConnect/icons/full/obj30/com/ibm/dev/AppConnect.gif"/>
+    <composition>
+      <nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.in" location="20,20">
+        <translation xmi:type="utility:TranslatableString" key="InTerminal.in" bundleName="com/ibm/dev/AppConnect" pluginId="AppConnect"/>
+      </nodes>
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.out" location="320,20">
+        <translation xmi:type="utility:TranslatableString" key="OutTerminal.out" bundleName="com/ibm/dev/AppConnect" pluginId="AppConnect"/>
+      </nodes>
+      <nodes xmi:type="com_ibm_dev_AppConnectInner.msgflow:FCMComposite_1" xmi:id="FCMComposite_1_1" location="210,89">
+        <translation xmi:type="utility:ConstantString" string="AppConnectInner"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="InTerminal.in" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="OutTerminal.out" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.EventType">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.EventType" bundleName="com/ibm/dev/AppConnect" pluginId="AppConnect"/>
+        <propertyDescriptor groupName="Group.Basic" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.URLPropertyEditor" configurable="true" describedAttribute="Property.URLSpecifierBase">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierBase" bundleName="com/ibm/dev/AppConnectInner"/>
+          <propertyDescriptor groupName="Group.Basic" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.URLPropertyEditor" configurable="true" describedAttribute="Property.URLSpecifierStar">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierStar" bundleName="com/ibm/dev/AppConnectInner"/>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+    <attributeLinks promotedAttribute="Property.EventType" overriddenNodes="FCMComposite_1_1">
+      <overriddenAttribute href="com/ibm/dev/AppConnectInner.msgflow#Property.eventType"/>
+    </attributeLinks>
+    <attributeLinks promotedAttribute="Property.URLSpecifierBase" overriddenNodes="FCMComposite_1_1">
+      <overriddenAttribute href="com/ibm/dev/AppConnectInner.msgflow#Property.URLSpecifierBase"/>
+    </attributeLinks>
+    <attributeLinks promotedAttribute="Property.URLSpecifierBase" overriddenNodes="FCMComposite_1_1">
+      <overriddenAttribute href="com/ibm/dev/AppConnectInner.msgflow#Property.webhookUrl"/>
+    </attributeLinks>
+    <attributeLinks promotedAttribute="Property.URLSpecifierStar" overriddenNodes="FCMComposite_1_1">
+      <overriddenAttribute href="com/ibm/dev/AppConnectInner.msgflow#Property.URLSpecifierStar"/>
+    </attributeLinks>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>

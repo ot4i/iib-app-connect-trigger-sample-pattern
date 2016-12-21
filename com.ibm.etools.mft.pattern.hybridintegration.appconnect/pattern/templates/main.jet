@@ -1,0 +1,2 @@
+<% com.ibm.etools.mft.pattern.support.Generation.onGenerate(context, "com.ibm.etools.mft.pattern.hybridintegration.appconnect", "Id1548d1c604fc1e791563c952b2a", "Id1548d1c6052126a9e228748682", "pattern"); %>
+

@@ -1,0 +1,2 @@
+7.0.0
+.com/ibm/dev/AppConnect.msgflow.IIBtoAppConnectWebhookLibJava.jar = generated/IIBtoAppConnectWebhookLibJava.jar
