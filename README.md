@@ -1,0 +1,1 @@
+# iib-app-connect-trigger-sample-pattern
