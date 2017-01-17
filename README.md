@@ -6,16 +6,10 @@ This repository includes source projects which can be imported into the IBM Inte
 	* A YAML configuration document (required by App Connect)
 	* A sample message flow including an App Connect message flow node.
 
-This [youtube recording shows everything working](https://www.youtube.com/watch?v=StwPbOiFKzk)
-
-If you would like to demonstrate the same features shown in the above recording, then prepare your environment by running through 
-
-the following steps:
+This [youtube recording shows everything working](https://www.youtube.com/watch?v=StwPbOiFKzk) If you would like to demonstrate the same features shown in the recording, then prepare your environment by running through the following steps:
 
 1. Install the AppConnect node.  
-Download the [AppConnect node](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/AppConnect_1.0.0.201612210011.jar) and copy it into your Toolkit dropins directory 
-
-<IIBv10FP7InstallationDirectory\tool\> For example by default on Windows this will be C:\Program Files\IBM\IIB\10.0.0.7\tools\dropins.
+Download the [AppConnect node](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/AppConnect_1.0.0.201612210011.jar) and copy it into your Toolkit dropins directory IIBv10FP7InstallationDirectory\tool\ For example by default on Windows this will be C:\Program Files\IBM\IIB\10.0.0.7\tools\dropins.
 
 2. Install the IIBAppConnect Pattern Archive.
 
