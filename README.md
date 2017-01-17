@@ -14,12 +14,12 @@ Download the [AppConnect node](https://github.com/ot4i/iib-app-connect-trigger-s
 **2. Install the IIBAppConnect Pattern Archive.**
 From the IIB Toolkit Patterns Explorer view, click the button to "Download and Install a pattern" (as shown by the red box below).
 
-![alt text](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/InstallPatternZip1.png "Download and Install a pattern in the IIB Toolkit")
+![alt text](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/blob/master/InstallPatternZip1.png "Download and Install a pattern in the IIB Toolkit")
 
 On the Download and Install Pattern dialog, enter the following HTTP URL and then click Download:
 https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/IIBAppConnect.patternzip
 
-![alt text](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/InstallPatternZip2.png "Download and Install pattern dialog in the IIB Toolkit")
+![alt text](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/blob/master/InstallPatternZip2.png "Download and Install pattern dialog in the IIB Toolkit")
 
 **3. Restart your IIB Toolkit**
 If you would like to make *changes* to the functionalities provided then clone this Github repository to access the code.
