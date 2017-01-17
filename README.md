@@ -1,19 +1,19 @@
 # iib-app-connect-trigger-sample-pattern
 
 This repository includes source projects which can be imported into the IBM Integration Bus Toolkit which provide:
-An IIB node for pushing events out from IIB into AppConnect via WebHooks
-An IIB to App Connect Integration Pattern which quickly generates:
-	A YAML configuration document (required by App Connect)
-	A sample message flow including an App Connect message flow node.
+* An IIB node for pushing events out from IIB into AppConnect via WebHooks
+* An IIB to App Connect Integration Pattern which quickly generates:
+	* A YAML configuration document (required by App Connect)
+	* A sample message flow including an App Connect message flow node.
 
-This youtube recording shows everything working: https://www.youtube.com/watch?v=StwPbOiFKzk
+This [youtube recording shows everything working](https://www.youtube.com/watch?v=StwPbOiFKzk)
 
 If you would like to demonstrate the same features shown in the above recording, then prepare your environment by running through 
 
 the following steps:
 
 1. Install the AppConnect node.  
-Download the built subflow UDN (https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/AppConnect_1.0.0.201612210011.jar) and copy it into your Toolkit dropins directory 
+Download the [AppConnect node](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/AppConnect_1.0.0.201612210011.jar) and copy it into your Toolkit dropins directory 
 
 <IIBv10FP7InstallationDirectory\tool\> For example by default on Windows this will be C:\Program Files\IBM\IIB\10.0.0.7\tools\dropins.
 
