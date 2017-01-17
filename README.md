@@ -19,7 +19,5 @@ From the IIB Toolkit Patterns Explorer view, click the button to "Download and I
 On the Download and Install Pattern dialog, enter the following HTTP URL and then click Download:
 https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download/V1.0/IIBAppConnect.patternzip
 
-![alt text](https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/blob/master/InstallPatternZip2.png "Download and Install pattern dialog in the IIB Toolkit")
-
 **3. Restart your IIB Toolkit**
 If you would like to make *changes* to the functionalities provided then clone this Github repository to access the code.
