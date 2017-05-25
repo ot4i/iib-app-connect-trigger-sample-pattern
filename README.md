@@ -26,4 +26,4 @@ https://github.com/ot4i/iib-app-connect-trigger-sample-pattern/releases/download
 You should now see the AppConnect node in your flow palette, and you should also see the pattern in the Patterns Explorer.
 If you would like to make *changes* to the functionalities provided by either the node or the pattern, then clone this Github repository to access the source code for the IIB projects.
 
-** Please note that the AppConnect node is implemented as a Subflow User-Defined node, which means that when deployed in a BAR file it must be packaged "inline" by ticking the option "Compile and in-line resources". This means that flows containing this node cannot be used in conjunction with shared libraries. **
+**Please note that the AppConnect node is implemented as a Subflow User-Defined node, which means that when deployed in a BAR file it must be packaged by ticking the option to Compile and in-line resources. This means that flows containing this node cannot be used in conjunction with shared libraries.**
