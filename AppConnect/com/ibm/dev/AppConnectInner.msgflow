@@ -6,13 +6,13 @@
     <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.webhookUrl" name="webhookUrl">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventType" name="eventType">
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.eventType" name="eventType" lowerBound="1" defaultValueLiteral="ExampleEvent">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierBase" name="URLSpecifierBase" lowerBound="1" defaultValueLiteral="/hook">
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierBase" name="URLSpecifierBase" lowerBound="1" defaultValueLiteral="/webhook">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
-    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierStar" name="URLSpecifierStar" lowerBound="1" defaultValueLiteral="/hook">
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.URLSpecifierStar" name="URLSpecifierStar" lowerBound="1" defaultValueLiteral="/webhook/*">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eStructuralFeatures>
     <translation xmi:type="utility:TranslatableString" key="AppConnectInner" bundleName="com/ibm/dev/AppConnectInner" pluginId="AppConnect"/>
@@ -60,9 +60,9 @@
         <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.eventType">
           <propertyName xmi:type="utility:TranslatableString" key="Property.eventType" bundleName="com/ibm/dev/AppConnectInner" pluginId="AppConnect"/>
           <propertyDescriptor groupName="Group.Basic" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.URLPropertyEditor" configurable="true" describedAttribute="Property.URLSpecifierBase">
-            <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierBase" bundleName="com/ibm/dev/AppConnectInner"/>
+            <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierBase" bundleName="com/ibm/dev/AppConnectInner" pluginId="AppConnect"/>
             <propertyDescriptor groupName="Group.Basic" propertyEditor="com.ibm.etools.mft.ibmnodes.editors.URLPropertyEditor" configurable="true" describedAttribute="Property.URLSpecifierStar">
-              <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierStar" bundleName="com/ibm/dev/AppConnectInner"/>
+              <propertyName xmi:type="utility:TranslatableString" key="Property.URLSpecifierStar" bundleName="com/ibm/dev/AppConnectInner" pluginId="AppConnect"/>
             </propertyDescriptor>
           </propertyDescriptor>
         </propertyDescriptor>
