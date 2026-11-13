@@ -1,3 +1,5 @@
+**This repo has not been in active development for a long while and is being archived.**
+
 # iib-app-connect-trigger-sample-pattern
 
 This repository includes source projects which can be imported into the IBM Integration Bus Toolkit which provide:
